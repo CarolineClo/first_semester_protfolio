@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme 4</title>
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+<body>
+    <header>
+        <h1>Caroline Clo.</h1>
+        <ul class="navBar">
+            <li class="portfolioNav">
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="portfolio.html" id="onPage">PORTFOLIO</a>
+            </li>
+            <li>
+                <a href="about.html">ABOUT</a>
+            </li>
+        </ul>
+        <div class="seperator"></div>
+    </header>
+    <main>
+
+        <section class="themes">
+            <h2 class="themeHeader">Theme 4: Basic Animation</h2>
+ 
+         <div class="linksDiv">
+             <h3>Links</h3>
+             <ul class="linksList">
+                 <li><a href="https://carolineclo.dk/kea/basicanimation/poopinthetoilet/" target="_blank">Poop in the Toilet</a> </li>
+                 <li><a href="https://carolineclo.dk/kea/basicanimation/poopinthetoilet/assets.html" target="_blank">Asset List</a></li>
+                 <li><a href="https://www.youtube.com/watch?v=mEXdwwVCXPA" target="_blank">Paper Prototype Test</a></li>
+            </ul>     
+         </div>
+         <div class="learningDiv">
+         <h3>Learning</h3>
+         <p class=themeP>The purpose of this theme was to create a game within a website using HTML CSS and JavaScript. The theme was split up into 4 assignments.</p> 
+             <ul>   
+                <li>04.01.01 Theme Assignment: A Website with a Game</li>   
+                <li>04.01.02 Paper Prototype</li> 
+                <li>04.01.04 Activity Diagram</li> 
+                <li>04.02.01 Asset List and Design Documentation</li>
+            </ul>
+        <h2><span>A website with a game</span></h2> 
+        <p>Before creating the game we learned about game mechanics, and the restrictions of this theme. I chose to make a game about potty training as I imagined it would have fun design elements and (as objects tend to fall into a toilet) simple falling mechanics.</p>
+        <p>I created the game for parents to play together with their toddlers as a way to start a conversation abut potty training. By clicking on the falling objects, the player can save certain items from falling into the toilet. The teddy bear, phone and sock do not belong in the toilet so click them and receive a point or lose a point if they fall into the toilet. The pee and poop should be allowed to fall into the toilet, so if the player clicks on them they will lose a life. To win the player must have ten points when the timer runs out. But if the player loses all three lives at anytime, they lose the game.</p>
+        <p>In this assignment we learned css positioning which lets us take an element outside of the normal flow of a document which we learned in basic web. The game had to have various screens stacked on top of each other within the game scene so I used position absolute to achieve this. I also absolute positioning on all the game sprite elements in the game so I control where they should sit within the game.</p>
+        <p>We were introduced to the transform and transition properties in css. The transform property allows us to change an elements appearance by scaling, rotating or skewing and the transition property defines the transition of these different states. 
+        </p>
+        <p>We learned how to apply these properties by creating a keyframe sequence. I used keyframe animations throughout my game. For example the falling objects I mentioned earlier are animated using the sequence:</p><p>@keyframes falling<br>{ 0% {transform:translateY(-10%)}<br>100% {transform: translateY(380%)} }</p>
+        <p>In this assignment we were also introduced to javascript. When an html document is linked to a javascript, any element can be accessed using the function queryselector and we can then affect that element within javascript, such as adding or removing a class from an element. We learned that we can add events to the document by using eventlistener injavescript.  An example of how I implemented this was to animate my falling objects after the player clicks on them. I instructed my falling objects to listen for the event “click” and then perform another keyframe animation, which was to spin and disappear.</p>
+        <p>A crucial element to the game is the points counter. We learned how to solve this using variables, which is a name that we tell javscript is a value. In the case of my game the variable is playerPoints=0 at the start of my game. By adding the instruction playerlives++ to the function that happens after a falling object is clicked, the player points will increase by one point every click.</p>
+        <p>Another element crucial to the game is the timer. I decided to illustrate the passing of time with keyframe animation of a shrinking bar. I decided this was best as the game is aimed at young kids who would understand that better than numbers counting down.</p>
+        <h2><span>Paper prototype</span></h2>
+        <p>Just like in basic UX, it was important to test the game with a <a href="https://www.youtube.com/watch?v=mEXdwwVCXPA">paper prototype</a> before spending time creating the digital product. After testing I simplified the rules slightly.</p>
+        <h2><span>Activity diagram</span></h2>
+        <p>To fully understand how the game functions before writing the code in javascript, we learned the importance of creating an activity diagram.</p>
+
+        <section class="learningImg">
+            <figure>
+                <img id="singleImg" src="images/activity_diagram.png" alt="Activity diagram for the game"><figcaption>Activity diagram for the page.</figcaption>
+            </figure>
+        </section>
+        <h2><span>Asset List and Documentation</span></h2> 
+        <p>As the game is aimed at children I was attracted to round, friendly shapes and bright pastel colours for the assets. I also liked minimal shading to add a bit of depth to the characters.</p>
+        <section class="learningImg">
+        <figure>
+            <img id="gameStyletile" src="images/animation_styletile.png" alt="The style tile for the game"><figcaption>Game asset style tile.</figcaption>
+        </figure>
+        </section>
+        <p>In this theme we learned how to transform rough sketches into high fidelity characters in Adobe illustrator, we learned that characters look more alive if they are asymmetrical so I applied this to all characters.</p>
+        <section class="learningImg">
+            <figure>
+                <img src="images/bear_sketch.png" alt="a sketch of bear character"><figcaption>bear sketch</figcaption>
+            </figure>
+            <figure>
+                <img src="images/second_bear.png" alt="a bear in adobe illustrator"><figcaption>Bear in Adobe illustrator</figcaption>
+            </figure>
+        </section>
+            
+        <p>We learned about the importance of UI within a game. I created extra shading on <a href="https://carolineclo.dk/kea/basicanimation/poopinthetoilet/assets.html">clickable assets</a> so they can be set apart from non clickable elements within the game.</p>
+
+
+        </div>
+ 
+        </section>
+     </main>
+     <footer>
+        <p>This is the first semester portfolio of first year student Caroline Cloughley
+        </p>
+    </footer>
+    </body>
+    </html>

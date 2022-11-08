@@ -1,0 +1,655 @@
+@import url("https://use.typekit.net/dfb0lpt.css");
+@import url("https://use.typekit.net/dfb0lpt.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+  font-family: owners-xxwide, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2em;
+  color: #0c1e4e;
+  margin: 1vw;
+}
+
+h2 {
+  font-family: grover-sc, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5em;
+  color: #f21d1d;
+}
+
+h3 {
+  font-family: grover, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5em;
+  color: black;
+  margin: 0.5em;
+}
+
+h4 {
+  font-family: grover, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  color: black;
+}
+
+/* navigation on every page */
+.navBar {
+  font-family: owners-xwide, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 0.8em;
+  list-style-type: none;
+  color: #f21d1d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navBar ul {
+  padding-inline-start: 0;
+}
+
+.seperator {
+  width: 110%;
+  height: 4px;
+  background-color: #0c1e4e;
+}
+
+.blue_star .cls-7 {
+  font-family: owners-xxwide, sans-serif;
+}
+
+.pfButton .cls-2 {
+  font-family: owners-xxwide, sans-serif;
+  font-size: 26px;
+}
+
+.navBar a:link {
+  text-decoration: none;
+  color: #f21d1d;
+}
+.navBar a:visited {
+  text-decoration: none;
+  color: #f21d1d;
+}
+.navBar a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.navBar a:active {
+  text-decoration: none;
+  color: #f21d1d;
+}
+
+#onPage {
+  color: #f2b807;
+}
+
+/* to change background colour in any section */
+.pinkBackground {
+  background-color: #f28d8d;
+}
+
+.blueBackground {
+  background-color: #2678bf;
+}
+
+.orangeBackground {
+  background-color: #f28a13;
+}
+
+.yellowBackground {
+  background-color: #f2b807;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: -1px;
+}
+
+/* sections 1-5 are inside the main grid */
+.section1 {
+  /* width: 100%; */
+  aspect-ratio: 1 / 0.9;
+}
+
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1px;
+}
+
+/* logo animation */
+.logoArrow {
+  width: 17%;
+  aspect-ratio: 1/ 2.5;
+  background-image: url(/images/logoArrow.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  left: 92%;
+  top: 53%;
+  animation: drop 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drop {
+  0% {
+    top: 15%;
+  }
+  100% {
+    top: 53%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 53%;
+  }
+  100% {
+    top: 15%;
+  }
+}
+
+.bounce {
+  animation: bounce 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+/* background dots can be added to any section */
+.orangeDots {
+  background-image: url("/images/orangeDots.svg");
+  background-size: 200%;
+}
+
+.blueDots {
+  background-image: url("/images/blueDots.png");
+  background-size: 200%;
+}
+
+.redDots {
+  background-image: url("/images/redDots.svg");
+  background-size: 200%;
+}
+
+/* sections 1-5 are within the main grid on different pages */
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* my face on home and about me page  */
+.bluePortrait {
+  width: 60%;
+}
+
+/* Home page 4th section */
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+}
+
+.homeButtons {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2em;
+}
+
+/* Second half of the portfolio page */
+.section5 {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3em;
+  row-gap: 3em;
+  margin-right: 8em;
+  margin-left: 8em;
+  margin-bottom: 8em;
+}
+
+.intro {
+  grid-column: 1/4;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/* each theme has it's own image */
+.theme2box {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  position: relative;
+  background-image: url(/images/theme_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.theme3box {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  position: relative;
+  background-image: url(/images/theme_3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.theme4box {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  position: relative;
+  background-image: url(/images/theme_4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.theme5box {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  position: relative;
+  background-image: url(/images/theme_5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.theme6box {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  position: relative;
+  background-image: url(/images/theme_6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* all hover images are styles like this */
+.hoverIcon {
+  aspect-ratio: 1/1;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+/* inside the hover icon */
+.hoverImg {
+  width: 95%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+/* this what happens when you hover over the each them descritption tile */
+.hoverBox:hover .hoverIcon {
+  opacity: 1;
+}
+
+p {
+  margin: 0;
+  padding: 10px;
+}
+
+/* the cv section on about me page */
+.section6 {
+  grid-column: 1 / 3;
+  background-image: url(/images/square_blue_dots.png);
+  background-size: 50%;
+  background-position: right;
+  background-repeat: repeat-y;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+h5 {
+  grid-column: 1 / 3;
+  font-family: grover-sc, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.2em;
+  color: black;
+  margin: 0;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+}
+
+.cvhead {
+  border-bottom: solid black 4px;
+  grid-column: span 2 / 3;
+  margin-right: 5em;
+  padding: 0;
+}
+
+.section6 h3 {
+  margin: 0;
+  padding: 0;
+  color: #f21d1d;
+}
+
+.section6 h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.section6 h2 {
+  margin: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-family: grover, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1em;
+  color: black;
+}
+
+span {
+  color: #d01818;
+}
+
+.education {
+  margin-left: 1.6em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.experience {
+  margin-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.pfButton {
+  width: 40%;
+}
+
+.aboutButton {
+  width: 30%;
+}
+
+/* layout of theme discrption pages */
+.themes {
+  margin: 2em;
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 25% 1fr;
+}
+
+.themeHeader {
+  grid-column: 1 / 3;
+}
+
+/* styling of links in theme description pages */
+
+.linksList {
+  list-style: none;
+  color: #0c1e4e;
+  font-family: grover, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  padding: 10px;
+  margin: 0;
+}
+
+.linksList li {
+  padding-bottom: 10px;
+}
+
+.linksList a:link {
+  text-decoration: none;
+  color: #0c1e4e;
+  margin: 0;
+}
+
+.linksList a:visited {
+  text-decoration: none;
+  color: #0c1e4e;
+  margin: 0;
+}
+
+.linksList a:hover {
+  text-decoration: none;
+  color: #d01818;
+  margin: 0;
+}
+
+.linksList a:active {
+  text-decoration: none;
+  color: #0c1e4e;
+  margin: 0;
+}
+
+p {
+  font-family: astoria-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.learningImg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+figure {
+  margin: 0;
+  padding: 10px;
+}
+
+figcaption {
+  font-family: astoria-sans, sans-serif;
+  font-weight: 320;
+  font-style: normal;
+  font-size: 0.5em;
+}
+
+.learningDiv img {
+  width: 340px;
+}
+#logoImg {
+  width: 100px;
+}
+
+#singleImg {
+  max-width: 100%;
+}
+
+#gameStyletile {
+  width: 100%;
+}
+
+.learningDiv h2 {
+  font-family: astoria-sans, sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  font-style: normal;
+  color: black;
+  padding: 10px;
+  margin: 0;
+}
+
+.rcImg {
+  display: flex;
+}
+
+.learningDiv ul {
+  font-family: astoria-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+footer p {
+  font-family: grover, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.5em;
+  color: black;
+  background-color: #f2d8da;
+}
+
+@media only screen and (max-width: 940px) {
+  h3 {
+    font-size: 1em;
+  }
+  h4 {
+    font-size: 0.6em;
+  }
+
+  h5 {
+    font-size: 2.2em;
+  }
+
+  .homeButtons {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navBar {
+    font-size: 0.6em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    font-size: 2.1em;
+  }
+
+  .section5 {
+    column-gap: 2em;
+    row-gap: 2em;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-bottom: 4em;
+  }
+
+  .hoverIcon {
+    opacity: 1;
+  }
+
+  .themes {
+    display: inline;
+  }
+
+  .section6 {
+    display: inline;
+  }
+  .cvhead {
+    border-bottom: solid black 3px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  header {
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .navBar {
+    font-size: 0.5em;
+  }
+
+  ul.navBar {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    grid-template-columns: 1fr 2fr;
+  }
+  h1 {
+    font-family: owners-xwide, sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    margin: 1em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  .section1 {
+    aspect-ratio: 1 / 2;
+  }
+
+  .section3 {
+    grid-column: 1/3;
+    aspect-ratio: 3 / 2;
+  }
+  .section4 {
+    grid-column: 1/3;
+    padding: 1em;
+  }
+
+  .section5 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    margin-right: 3em;
+    column-gap: 3em;
+  }
+
+  .hoverIcon {
+    opacity: 1;
+  }
+
+  .seperator {
+    height: 2px;
+  }
+
+  @keyframes drop {
+    0% {
+      top: 15%;
+    }
+    100% {
+      top: 62%;
+    }
+  }
+
+  .logoArrow {
+    width: 30%;
+  }
+  .cvhead {
+    border-bottom: solid black 2px;
+  }
+}
